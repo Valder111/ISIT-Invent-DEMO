@@ -5,7 +5,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
-  const base = (env.VITE_BASE_URL ?? '').trim() || '/'
+  const base = (process.env.VITE_BASE_URL ?? env.VITE_BASE_URL ?? '').trim() || '/'
 
   return {
     base,

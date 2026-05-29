@@ -6,6 +6,7 @@ import { usersApi, type UserAdminPatchBody, type UserDetail } from '../../../sha
 import '../../../css/panel.css'
 import '../../../css/panel-user-detail.css'
 import { UserDetailAlerts } from './UserDetailAlerts'
+import { SafeImage } from '../../../shared/ui/SafeImage'
 import { UserDetailEditForm } from './UserDetailEditForm'
 import { UserDetailToolbar } from './UserDetailToolbar'
 
@@ -105,7 +106,7 @@ export function PanelUserDetailPage() {
       <div className="profile-layout panel-user-detail__layout">
         <div className="profile-avatar-box">
           {user.img_url ? (
-            <img src={user.img_url} alt="" />
+            <SafeImage src={user.img_url} alt="" />
           ) : (
             <div className="profile-avatar-placeholder">{(user.username?.[0] ?? '?').toUpperCase()}</div>
           )}

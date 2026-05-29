@@ -4,6 +4,7 @@ import { useAuthState } from '../../shared/auth/useAuthState'
 import { uploadFile } from '../../shared/api/files'
 import { ApiError } from '../../shared/api/http'
 import { roleRu } from '../../shared/lib/ruLabels'
+import { SafeImage } from '../../shared/ui/SafeImage'
 import '../../css/panel.css'
 import '../../css/profile-page.css'
 
@@ -85,7 +86,7 @@ export function ProfilePage() {
       <div className="profile-layout">
         <div className="profile-avatar-box">
           {me.img_url ? (
-            <img src={me.img_url} alt="" />
+            <SafeImage src={me.img_url} alt="" />
           ) : (
             <div className="profile-avatar-placeholder">{(me.username?.[0] ?? '?').toUpperCase()}</div>
           )}

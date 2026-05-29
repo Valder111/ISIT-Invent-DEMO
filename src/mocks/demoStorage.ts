@@ -116,15 +116,16 @@ export async function clearAllObjects(): Promise<void> {
   db.close()
 }
 
+import { withAppBase } from '../shared/lib/staticAssetUrl'
+
 /** URL для <img src> и presign (относительно origin + Vite base). */
 export function presignUrl(key: string): string {
-  const base = (import.meta.env.BASE_URL ?? '/').replace(/\/+$/, '')
   const encoded = key
     .replace(/^\/+/, '')
     .split('/')
     .map((seg) => encodeURIComponent(seg))
     .join('/')
-  return `${base}/api/demo-files/${encoded}`
+  return withAppBase(`/api/demo-files/${encoded}`)
 }
 
 export function isObjectKey(value: string | undefined | null): boolean {

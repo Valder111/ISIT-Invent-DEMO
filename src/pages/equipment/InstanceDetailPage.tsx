@@ -7,6 +7,8 @@ import { ApiError } from '../../shared/api/http'
 import { instancesApi, type EquipmentInstance } from '../../shared/api/equipment'
 import { equipmentStatusRu, ynRu } from '../../shared/lib/ruLabels'
 import { isDemoBuild } from '../../shared/lib/demoEnv'
+import { withAppBase } from '../../shared/lib/staticAssetUrl'
+import { SafeImage } from '../../shared/ui/SafeImage'
 import { EquipmentDetailShell } from './EquipmentDetailShell'
 
 function fmt(iso: string) {
@@ -121,7 +123,7 @@ export function InstanceDetailPage() {
           <div className="equipment-qr-block__actions">
             <a
               className="btn btn--secondary btn--sm"
-              href={`/api/equipment/${item.id}/qr-label.pdf`}
+              href={withAppBase(`/api/equipment/${item.id}/qr-label.pdf`)}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -129,7 +131,7 @@ export function InstanceDetailPage() {
             </a>
           </div>
           {item.qr_img_url ? (
-            <img className="equipment-qr-block__preview" src={item.qr_img_url} alt="Код для сканирования на этикетке" />
+            <SafeImage className="equipment-qr-block__preview" src={item.qr_img_url} alt="Код для сканирования на этикетке" />
           ) : null}
         </div>
       )}

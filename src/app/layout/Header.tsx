@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import type { MeResponse } from '../../shared/api/auth'
 import { inventoryEditPanelHome, laborantPanelHome } from '../../shared/auth/panelNav'
 import { isDemoBuild } from '../../shared/lib/demoEnv'
+import { staticAssetUrl } from '../../shared/lib/staticAssetUrl'
 import logoUrl from '../../assets/images/logo.jpg'
 
 function DemoWatermark() {
@@ -18,7 +19,8 @@ function DemoWatermark() {
 function UserAvatar({ username, imgUrl }: { username: string; imgUrl?: string }) {
   const initial = (username?.[0] ?? '?').toUpperCase()
   const [imgFailed, setImgFailed] = useState(false)
-  const showPhoto = Boolean(imgUrl) && !imgFailed
+  const resolvedUrl = imgUrl ? staticAssetUrl(imgUrl) : undefined
+  const showPhoto = Boolean(resolvedUrl) && !imgFailed
 
   useEffect(() => {
     setImgFailed(false)
@@ -28,14 +30,14 @@ function UserAvatar({ username, imgUrl }: { username: string; imgUrl?: string })
     <span className="user-avatar-wrap">
       <span className={`user-avatar${showPhoto ? ' user-avatar--photo' : ''}`} data-initial={initial} aria-hidden>
         {showPhoto ? (
-          <img className="user-avatar__img" src={imgUrl} alt="" onError={() => setImgFailed(true)} />
+          <img className="user-avatar__img" src={resolvedUrl} alt="" onError={() => setImgFailed(true)} />
         ) : (
           <span className="user-avatar__letter">{initial}</span>
         )}
       </span>
       {showPhoto && (
         <span className="user-avatar__pop" aria-hidden>
-          <img src={imgUrl} alt="" />
+          <img src={resolvedUrl} alt="" />
         </span>
       )}
     </span>

@@ -6,6 +6,7 @@ import { EntityLink } from '../../shared/ui/EntityLink'
 import { ApiError } from '../../shared/api/http'
 import { modelsApi, type EquipmentModel } from '../../shared/api/equipment'
 import { isDemoBuild } from '../../shared/lib/demoEnv'
+import { withAppBase } from '../../shared/lib/staticAssetUrl'
 import { EquipmentDetailShell } from './EquipmentDetailShell'
 
 function fmt(iso: string) {
@@ -90,7 +91,7 @@ export function ModelDetailPage() {
           {item.count > 0 && !isDemoBuild() && (
             <a
               className="btn btn--secondary btn--sm"
-              href={`/api/models/${item.id}/qr-labels.pdf`}
+              href={withAppBase(`/api/models/${item.id}/qr-labels.pdf`)}
               target="_blank"
               rel="noopener noreferrer"
             >
