@@ -1,0 +1,83 @@
+/* Сетка карточек оборудования (базовые стили) */
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.equipment-card {
+  border: 2px solid var(--corp-border);
+  border-radius: var(--radius);
+  background: var(--corp-white);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 120px;
+}
+
+.equipment-card__main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.equipment-card__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 650;
+  color: var(--corp-text);
+}
+
+.equipment-card__meta {
+  font-size: 13px;
+  color: var(--corp-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.equipment-grid--compact {
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: 10px;
+}
+
+.equipment-card--compact {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  min-height: 0;
+}
+
+.equipment-card--compact .equipment-card__thumb {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.equipment-card--compact .equipment-card__title {
+  font-size: 14px;
+}
+
+.equipment-card--compact .equipment-card__meta {
+  font-size: 12px;
+}
+
+.equipment-card--compact .equipment-card__actions {
+  gap: 6px;
+}
+
+.equipment-card--compact .btn--sm {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.equipment-card__actions {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

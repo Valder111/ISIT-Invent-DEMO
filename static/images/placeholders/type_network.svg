@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="256" viewBox="0 0 512 256">
+  <rect width="512" height="256" rx="28" fill="#dcfce7"/>
+  <rect x="70" y="70" width="372" height="96" rx="18" fill="#065f46"/>
+  <circle cx="130" cy="118" r="12" fill="#86efac"/>
+  <circle cx="170" cy="118" r="12" fill="#86efac"/>
+  <circle cx="210" cy="118" r="12" fill="#86efac"/>
+  <rect x="270" y="104" width="140" height="28" rx="10" fill="#86efac"/>
+  <text x="256" y="234" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="18" fill="#065f46">NETWORK</text>
+</svg>
+

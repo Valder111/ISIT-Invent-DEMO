@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="256" viewBox="0 0 512 256">
+  <rect width="512" height="256" rx="28" fill="#fff7ed"/>
+  <rect x="86" y="70" width="340" height="108" rx="22" fill="#9a3412"/>
+  <rect x="120" y="104" width="96" height="40" rx="12" fill="#fed7aa"/>
+  <rect x="236" y="104" width="96" height="40" rx="12" fill="#fed7aa"/>
+  <rect x="352" y="104" width="40" height="40" rx="12" fill="#fed7aa"/>
+  <text x="256" y="234" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="18" fill="#9a3412">PERIPHERALS</text>
+</svg>
+

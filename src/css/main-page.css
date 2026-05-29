@@ -1,0 +1,9 @@
+/* Главная страница (MainPage) */
+
+.main-page__activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}

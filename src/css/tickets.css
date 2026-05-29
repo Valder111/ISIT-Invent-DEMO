@@ -1,0 +1,42 @@
+/* Заявки — широкая таблица истории */
+.tickets-page .data-table {
+  font-size: 14px;
+}
+
+.tickets-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.tickets-toolbar__title {
+  margin: 0;
+  flex: 1;
+}
+
+.ticket-create__intro {
+  margin-bottom: 16px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.ticket-detail__items {
+  margin-top: 20px;
+}
+
+.ticket-detail .table-scroll .data-table {
+  min-width: 720px;
+}
+
+.ticket-detail .attr-table {
+  font-size: 16px;
+}
+
+.ticket-detail .attr-table th,
+.ticket-detail .attr-table td {
+  padding: 14px 16px;
+}

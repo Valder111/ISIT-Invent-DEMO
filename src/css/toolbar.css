@@ -1,0 +1,33 @@
+/* Панели фильтров и поиска */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.toolbar__search {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 12px;
+  border: 2px solid var(--corp-border);
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: 15px;
+}
+
+.toolbar__search:focus {
+  outline: none;
+  border-color: var(--corp-black);
+  box-shadow: 0 0 0 2px rgba(10, 10, 10, 0.08);
+}
+
+.toolbar__sort {
+  padding: 9px 10px;
+  border: 2px solid var(--corp-border);
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: 14px;
+  background: var(--corp-white);
+}

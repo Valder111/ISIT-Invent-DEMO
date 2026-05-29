@@ -1,0 +1,28 @@
+/* Переключатель сегментов (авторизация и др.) */
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--corp-border-strong);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.segmented__btn {
+  border: 0;
+  background: var(--corp-white);
+  color: var(--corp-muted);
+  padding: 10px 14px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.segmented__btn:hover {
+  background: var(--corp-accent-bg);
+  color: var(--corp-text);
+}
+
+.segmented__btn--active {
+  color: var(--corp-white);
+  background: var(--corp-black);
+}

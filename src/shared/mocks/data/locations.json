@@ -1,0 +1,30 @@
+[
+  {
+    "id": 200,
+    "name": "Лаборатория 101",
+    "description": "Компьютерный класс (1 этаж)",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-04T09:00:00.000Z",
+    "updated_at": "2026-01-04T09:00:00.000Z"
+  },
+  {
+    "id": 201,
+    "name": "Склад",
+    "description": "Склад оборудования",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-04T09:00:00.000Z",
+    "updated_at": "2026-01-04T09:00:00.000Z"
+  },
+  {
+    "id": 202,
+    "name": "Кабинет 305",
+    "description": "Администрация (3 этаж)",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-04T09:00:00.000Z",
+    "updated_at": "2026-01-04T09:00:00.000Z"
+  }
+]
+

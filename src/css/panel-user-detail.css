@@ -1,0 +1,17 @@
+/* Панель: карточка пользователя */
+
+.panel-user-detail__alert {
+  margin-top: 12px;
+}
+
+.panel-user-detail__layout {
+  margin-top: 16px;
+}
+
+.panel-user-detail__form {
+  flex: 1;
+}
+
+.panel-user-detail__meta-table {
+  margin-top: 8px;
+}

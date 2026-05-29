@@ -1,0 +1,59 @@
+[
+  {
+    "id": 100,
+    "type_id": 10,
+    "name": "Dell OptiPlex 7010",
+    "description": "Офисная рабочая станция.",
+    "is_consumable": false,
+    "count": 0,
+    "img": "models/optiplex",
+    "img_url": "/static/images/placeholders/model_pc.svg",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-06T09:00:00.000Z",
+    "updated_at": "2026-01-06T09:00:00.000Z"
+  },
+  {
+    "id": 101,
+    "type_id": 11,
+    "name": "TP-Link TL-SG108",
+    "description": "Коммутатор 8x1GbE.",
+    "is_consumable": false,
+    "count": 0,
+    "img": "models/switch",
+    "img_url": "/static/images/placeholders/model_network.svg",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-06T09:00:00.000Z",
+    "updated_at": "2026-01-06T09:00:00.000Z"
+  },
+  {
+    "id": 102,
+    "type_id": 12,
+    "name": "Dell P2419H",
+    "description": "Монитор 24\".",
+    "is_consumable": false,
+    "count": 0,
+    "img": "models/monitor",
+    "img_url": "/static/images/placeholders/model_monitor.svg",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-06T09:00:00.000Z",
+    "updated_at": "2026-01-06T09:00:00.000Z"
+  },
+  {
+    "id": 103,
+    "type_id": 13,
+    "name": "Кабель Ethernet Cat6 (1м)",
+    "description": "Патч-корд Cat6.",
+    "is_consumable": true,
+    "count": 35,
+    "img": "models/cat6",
+    "img_url": "/static/images/placeholders/model_cable.svg",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-06T09:00:00.000Z",
+    "updated_at": "2026-01-06T09:00:00.000Z"
+  }
+]
+

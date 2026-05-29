@@ -1,0 +1,38 @@
+/* Адаптив: телефоны (фаза A). Планшеты не целимся отдельно. */
+:root {
+  --bp-mobile: 768px;
+  --header-drawer-width: min(320px, 92vw);
+}
+
+html {
+  overflow-x: clip;
+}
+
+body.body--nav-open {
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .app-main {
+    padding: 14px 12px 22px;
+  }
+
+  .page-title {
+    font-size: 1.25rem;
+    word-break: break-word;
+  }
+
+  .welcome-h1 {
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

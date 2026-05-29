@@ -1,0 +1,20 @@
+/* Сообщения и предупреждения */
+.alert {
+  padding: 12px 14px;
+  border: 2px solid var(--corp-border);
+  border-radius: var(--radius);
+  font-size: 14px;
+}
+
+.alert--error {
+  border-color: #c62828;
+  background: #ffebee;
+  color: #6a1010;
+}
+
+/* Сообщения уровня страницы (ошибки действий, конфликты API) */
+.alert--page {
+  margin: 20px 0 28px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 10px rgba(13, 71, 161, 0.08);
+}

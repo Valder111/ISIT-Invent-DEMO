@@ -1,0 +1,16 @@
+/* Хлебные крошки */
+.inline-crumbs {
+  font-size: 14px;
+  color: var(--corp-muted);
+  margin-bottom: 12px;
+}
+
+.inline-crumbs a {
+  color: var(--corp-text);
+  font-weight: 600;
+}
+
+.inline-crumbs a:hover {
+  color: var(--corp-blue);
+  text-decoration: underline;
+}

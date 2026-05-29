@@ -1,0 +1,23 @@
+[
+  {
+    "id": 5000,
+    "ticket_id": 4000,
+    "model_id": 102,
+    "instance_id": null,
+    "quantity": 1,
+    "comment": "Проверить монитор на замену.",
+    "created_at": "2026-02-01T12:00:00.000Z",
+    "updated_at": "2026-02-01T12:00:00.000Z"
+  },
+  {
+    "id": 5001,
+    "ticket_id": 4000,
+    "model_id": 103,
+    "instance_id": null,
+    "quantity": 2,
+    "comment": "Патч-корды для диагностики.",
+    "created_at": "2026-02-01T12:05:00.000Z",
+    "updated_at": "2026-02-01T12:05:00.000Z"
+  }
+]
+

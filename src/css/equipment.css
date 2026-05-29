@@ -1,0 +1,154 @@
+/* Оборудование — плотная сетка карточек */
+.equipment-page .toolbar {
+  padding: 12px 14px;
+  border: 2px solid var(--corp-border);
+  border-radius: var(--radius);
+  background: var(--corp-white);
+}
+
+.equipment-card__thumb {
+  height: 100px;
+  border: 1px solid var(--corp-border);
+  border-radius: var(--radius);
+  background: #f5f9fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.equipment-card__thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Переключатель «Умный поиск» в тулбаре */
+.smart-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid var(--corp-border-strong);
+  border-radius: var(--radius);
+  background: var(--corp-white);
+  font-size: 13px;
+  color: var(--corp-text);
+  cursor: pointer;
+  user-select: none;
+}
+
+.smart-toggle input[type='checkbox'] {
+  margin: 0;
+  accent-color: var(--corp-blue);
+}
+
+.smart-toggle__label {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.smart-toggle:has(input:checked) {
+  background: #e3f2fd;
+  border-color: var(--corp-blue);
+  color: var(--corp-blue);
+}
+
+@media (max-width: 767px) {
+  .toolbar--ai-mobile .toolbar__search::placeholder {
+    color: #8a4b00;
+  }
+
+  .toolbar--ai-mobile .toolbar__search {
+    border-color: #e6a23c;
+  }
+
+  .smart-toggle:has(input:checked) .smart-toggle__label {
+    font-size: 12px;
+  }
+}
+
+/* Баннер статуса AI (загрузка модели, индексация) */
+.ai-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  margin: 0 0 12px;
+  border: 1px solid var(--corp-border-strong);
+  border-radius: var(--radius);
+  background: var(--corp-surface);
+  font-size: 13px;
+  color: var(--corp-text);
+}
+
+.ai-banner--ok {
+  background: #e8f5e9;
+  border-color: #a5d6a7;
+}
+
+.ai-banner--err {
+  background: #ffebee;
+  border-color: #ef9a9a;
+  color: #6a1010;
+}
+
+.ai-banner__chip {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--corp-blue);
+  color: var(--corp-white);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.ai-banner__text {
+  flex: 1;
+}
+
+/* Бейдж релевантности на карточке результата семантики */
+.score-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--corp-blue);
+  color: var(--corp-white);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+/* Маркер типа сущности в глобальном поиске */
+.type-pill {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid var(--corp-border);
+}
+
+.type-pill--category {
+  background: #fff8e1;
+  color: #6d4c00;
+  border-color: #f1d27a;
+}
+
+.type-pill--model {
+  background: #e3f2fd;
+  color: #0d47a1;
+  border-color: #90caf9;
+}
+
+.type-pill--instance {
+  background: #e8f5e9;
+  color: #1b5e20;
+  border-color: #a5d6a7;
+}

@@ -1,0 +1,55 @@
+/* Формы и поля ввода */
+.form-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--corp-muted);
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid var(--corp-border);
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: 15px;
+  background: var(--corp-white);
+  color: var(--corp-text);
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  outline: none;
+  border-color: var(--corp-blue-2);
+  box-shadow: 0 0 0 2px rgba(95, 180, 240, 0.35);
+}
+
+.actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .actions-row .btn {
+    min-height: 44px;
+  }
+}

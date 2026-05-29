@@ -1,0 +1,124 @@
+/* Таблицы данных */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px 12px;
+  border: 1px solid var(--corp-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table th {
+  background: var(--corp-accent-bg);
+  color: var(--corp-text);
+  font-weight: 650;
+}
+
+.data-table tr:nth-child(even) td {
+  background: var(--corp-surface);
+}
+
+.data-table--clickable tbody tr {
+  cursor: pointer;
+}
+
+.data-table--clickable tbody tr:hover td {
+  background: #e4e9f1;
+}
+
+.attr-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.attr-table th,
+.attr-table td {
+  padding: 12px 14px;
+  border: 1px solid var(--corp-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.attr-table th {
+  width: 32%;
+  background: var(--corp-accent-bg);
+  color: var(--corp-muted);
+  font-weight: 600;
+}
+
+.attr-table__link {
+  color: var(--corp-blue);
+  font-weight: 650;
+}
+
+.attr-table__link:hover {
+  color: var(--corp-black);
+}
+
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Описательные таблицы (профиль, заявка) — влезают в ширину экрана */
+@media (max-width: 767px) {
+  .attr-table--fit {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid var(--corp-border-strong);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .attr-table--fit tbody,
+  .attr-table--fit tr {
+    display: block;
+    width: 100%;
+  }
+
+  .attr-table--fit tr {
+    border-bottom: 1px solid var(--corp-border);
+  }
+
+  .attr-table--fit tr:last-child {
+    border-bottom: none;
+  }
+
+  .attr-table--fit th,
+  .attr-table--fit td {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: none;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .attr-table--fit th {
+    background: var(--corp-accent-bg);
+    padding: 10px 12px 4px;
+    font-size: 12px;
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--corp-muted);
+  }
+
+  .attr-table--fit td {
+    padding: 4px 12px 12px;
+    background: var(--corp-white);
+  }
+
+  .attr-table--fit tr:nth-child(even) td {
+    background: var(--corp-surface);
+  }
+}

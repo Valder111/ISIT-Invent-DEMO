@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "username": "Администратор",
+    "email": "admin@email.com",
+    "role": "admin",
+    "password": "admin",
+    "img_url": "/static/images/users/admin.svg",
+    "is_active": true,
+    "comment": "Демо-аккаунт администратора",
+    "created_at": "2026-01-10T10:00:00.000Z",
+    "updated_at": "2026-01-10T10:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "username": "Мат. ответственный",
+    "email": "inventory@email.com",
+    "role": "inventory_manager",
+    "password": "inventory",
+    "img_url": "/static/images/users/inventory.svg",
+    "is_active": true,
+    "comment": "Демо-аккаунт материально ответственного",
+    "created_at": "2026-01-10T10:00:00.000Z",
+    "updated_at": "2026-01-10T10:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "username": "Лаборант",
+    "email": "laborant@email.com",
+    "role": "laborant",
+    "password": "laborant",
+    "img_url": "/static/images/users/laborant.svg",
+    "is_active": true,
+    "comment": "Демо-аккаунт лаборанта",
+    "created_at": "2026-01-10T10:00:00.000Z",
+    "updated_at": "2026-01-10T10:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "username": "Пользователь",
+    "email": "user@email.com",
+    "role": "user",
+    "password": "user",
+    "img_url": "/static/images/users/user.svg",
+    "is_active": true,
+    "comment": "Демо-аккаунт обычного пользователя",
+    "created_at": "2026-01-10T10:00:00.000Z",
+    "updated_at": "2026-01-10T10:00:00.000Z"
+  }
+]
+

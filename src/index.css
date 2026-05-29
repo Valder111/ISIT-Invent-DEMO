@@ -1,0 +1,83 @@
+/* ISIT-Инвентарь — переменные темы, базовые стили и подключение модулей */
+@import './css/layout.css';
+@import './css/responsive.css';
+@import './css/header.css';
+@import './css/dropdown.css';
+@import './css/panel-chrome.css';
+@import './css/tables.css';
+@import './css/detail.css';
+@import './css/equipment-detail-page.css';
+@import './css/profile-page.css';
+@import './css/equipment-cards.css';
+@import './css/toolbar.css';
+@import './css/buttons.css';
+@import './css/forms.css';
+@import './css/alerts.css';
+@import './css/status-badges.css';
+@import './css/breadcrumbs.css';
+@import './css/main-dashboard.css';
+@import './css/segmented.css';
+@import './css/panel.css';
+@import './css/panel-mobile.css';
+
+:root {
+  --corp-blue: #0d47a1;
+  --corp-blue-2: #1565c0;
+  --corp-cyan: #42a5f5;
+  --corp-white: #ffffff;
+  --corp-bg: #e8eef5;
+  --corp-surface: #f4f6fa;
+  --corp-border: #c5ced9;
+  --corp-black: #0a0a0a;
+  --corp-border-strong: rgba(10, 10, 10, 0.14);
+  --corp-text: #111111;
+  --corp-muted: #4a4f55;
+  --corp-accent-bg: #eceff4;
+  --font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --radius: 4px;
+  color-scheme: light;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--corp-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background:
+    radial-gradient(ellipse 120% 85% at 50% -25%, rgba(13, 71, 161, 0.35), transparent 52%),
+    radial-gradient(1000px 600px at 0% 20%, rgba(66, 165, 245, 0.22), transparent 50%),
+    radial-gradient(900px 520px at 100% 75%, rgba(10, 10, 10, 0.06), transparent 45%),
+    linear-gradient(168deg, #dfe8f2 0%, var(--corp-bg) 42%, #cfd9e8 72%, #b8c5d8 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: var(--corp-muted);
+  font-size: 14px;
+}
+
+.code-block {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--corp-border);
+  border-radius: var(--radius);
+  background: #f5f9fd;
+  font: 12px/1.4 Consolas, monospace;
+  overflow: auto;
+}

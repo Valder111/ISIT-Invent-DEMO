@@ -1,0 +1,99 @@
+/* Страница авторизации — крупная «телефонная» карточка */
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100svh - 0px);
+  padding: 24px 16px 40px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  border: 1px solid var(--corp-border-strong);
+  border-radius: var(--radius);
+  background: var(--corp-white);
+  box-shadow: 0 16px 48px rgba(10, 10, 10, 0.12);
+}
+
+.auth-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px 22px 16px;
+  border-bottom: 1px solid var(--corp-border-strong);
+  background: linear-gradient(180deg, var(--corp-surface) 0%, var(--corp-white) 100%);
+}
+
+.auth-card__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 650;
+  color: var(--corp-text);
+  letter-spacing: -0.03em;
+}
+
+.auth-card__demo-note {
+  margin: 0;
+  padding: 14px 22px 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--corp-muted);
+}
+
+.auth-card__form {
+  display: grid;
+  gap: 16px;
+  padding: 22px;
+}
+
+.auth-card .field__label {
+  font-size: 15px;
+}
+
+.auth-card .input,
+.auth-card .select {
+  font-size: 18px;
+  padding: 14px 14px;
+}
+
+.auth-card .btn {
+  font-size: 18px;
+  padding: 14px 18px;
+}
+
+.auth-card .segmented__btn {
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+@media (max-width: 767px) {
+  .auth-page {
+    align-items: flex-start;
+    padding: 16px 12px 28px;
+  }
+
+  .auth-card__header {
+    padding: 18px 16px 14px;
+  }
+
+  .auth-card__title {
+    font-size: 1.35rem;
+  }
+
+  .auth-card__form {
+    padding: 18px 16px;
+  }
+
+  .auth-card .input,
+  .auth-card .select {
+    font-size: 16px;
+    padding: 12px 12px;
+  }
+
+  .auth-card .btn {
+    font-size: 16px;
+    padding: 12px 16px;
+    min-height: 44px;
+  }
+}

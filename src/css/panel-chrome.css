@@ -1,0 +1,82 @@
+/* Общие панели и заголовки страниц */
+.page-title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 650;
+  color: var(--corp-text);
+  letter-spacing: -0.03em;
+}
+
+.welcome-h1 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 650;
+  color: var(--corp-text);
+  letter-spacing: -0.035em;
+}
+
+.panel {
+  border: 1px solid var(--corp-border-strong);
+  border-radius: var(--radius);
+  background: var(--corp-white);
+  box-shadow: 0 1px 3px rgba(10, 10, 10, 0.06);
+}
+
+.panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--corp-border-strong);
+  background: linear-gradient(180deg, var(--corp-surface) 0%, var(--corp-white) 100%);
+}
+
+.panel__title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 650;
+  color: var(--corp-text);
+  letter-spacing: -0.02em;
+}
+
+.panel__body {
+  padding: 16px;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.cards-grid__card {
+  display: block;
+  padding: 20px 18px;
+  border: 1px solid var(--corp-border-strong);
+  border-radius: var(--radius);
+  background: var(--corp-white);
+  box-shadow: 0 1px 3px rgba(10, 10, 10, 0.05);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.cards-grid__card:hover {
+  border-color: rgba(10, 10, 10, 0.22);
+  box-shadow: 0 10px 28px rgba(10, 10, 10, 0.1);
+  text-decoration: none;
+}
+
+.cards-grid__card-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 650;
+  color: var(--corp-text);
+  letter-spacing: -0.02em;
+}
+
+.cards-grid__card-desc {
+  margin: 0;
+  font-size: 14px;
+  color: var(--corp-muted);
+  line-height: 1.5;
+}

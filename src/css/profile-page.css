@@ -1,0 +1,38 @@
+/* Страница /profile */
+
+.profile-page {
+  max-width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .profile-page .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .profile-page .profile-avatar-box {
+    text-align: center;
+  }
+
+  .profile-page .profile-avatar-box img,
+  .profile-page .profile-avatar-placeholder {
+    max-width: min(180px, 56vw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-page .profile-layout > div:last-child {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .profile-page .panel {
+    max-width: 100%;
+  }
+
+  .profile-page .panel__body.form-grid .actions-row .btn {
+    width: 100%;
+    min-height: 44px;
+  }
+}

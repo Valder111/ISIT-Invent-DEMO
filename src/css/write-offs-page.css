@@ -1,0 +1,26 @@
+/* Страница списаний (WriteOffsPage) */
+
+.writeoffs-page__intro {
+  margin-bottom: 16px;
+}
+
+.writeoffs-page__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.writeoffs-page__radio-label {
+  margin-right: 16px;
+}
+
+.writeoffs-page__picker-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.writeoffs-page__history {
+  margin-top: 24px;
+}

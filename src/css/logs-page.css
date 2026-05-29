@@ -1,0 +1,13 @@
+/* Страница «Журнал действий» (LogsFullPage) */
+
+.logs-page__field--tight {
+  margin: 0;
+}
+
+.logs-page__comment-cell {
+  max-width: 320px;
+}
+
+.logs-page__pager {
+  margin-top: 16px;
+}

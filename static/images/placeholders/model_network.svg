@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="256" viewBox="0 0 512 256">
+  <rect width="512" height="256" rx="28" fill="#dcfce7"/>
+  <rect x="86" y="82" width="340" height="92" rx="20" fill="#166534"/>
+  <circle cx="140" cy="128" r="12" fill="#86efac"/>
+  <circle cx="180" cy="128" r="12" fill="#86efac"/>
+  <circle cx="220" cy="128" r="12" fill="#86efac"/>
+  <rect x="270" y="114" width="130" height="28" rx="10" fill="#86efac"/>
+  <text x="256" y="234" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="18" fill="#166534">MODEL NETWORK</text>
+</svg>
+

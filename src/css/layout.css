@@ -1,0 +1,64 @@
+/* Shell и основной контент */
+.app-shell {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-shell--auth {
+  background:
+    radial-gradient(ellipse 100% 80% at 50% -20%, rgba(13, 71, 161, 0.28), transparent 55%),
+    linear-gradient(168deg, #d5e0ed 0%, var(--corp-bg) 55%, #c9d6e7 100%);
+}
+
+.app-main {
+  flex: 1;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 20px 18px 28px;
+}
+
+/* Небольшое скругление для изображений в контенте; аватарки — круглые отдельными правилами */
+.app-main img:not(.user-avatar__img):not(.profile-avatar-box img) {
+  border-radius: 10px;
+}
+
+.user-avatar__img,
+.profile-avatar-box img {
+  border-radius: 50%;
+}
+
+.app-footer {
+  margin-top: auto;
+  padding: 16px 18px;
+  border-top: 1px solid var(--corp-border-strong);
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 13px;
+  color: var(--corp-muted);
+}
+
+.app-footer__inner {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-footer__contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: center;
+}
+
+.app-footer__contact a {
+  color: var(--corp-text);
+  font-weight: 600;
+}
+
+.app-footer__contact a:hover {
+  color: var(--corp-blue);
+}

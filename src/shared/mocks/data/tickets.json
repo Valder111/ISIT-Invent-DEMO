@@ -1,0 +1,44 @@
+[
+  {
+    "id": 4000,
+    "author_id": 4,
+    "laborant_id": 3,
+    "type": "hardware",
+    "status": "in_progress",
+    "name": "Не включается ПК-101-01",
+    "description": "После включения нет изображения на мониторе.",
+    "comment": "",
+    "cancel_reason": "",
+    "is_active": true,
+    "created_at": "2026-02-01T09:00:00.000Z",
+    "updated_at": "2026-02-02T09:00:00.000Z"
+  },
+  {
+    "id": 4001,
+    "author_id": 2,
+    "laborant_id": null,
+    "type": "network",
+    "status": "draft",
+    "name": "Настроить коммутатор на складе",
+    "description": "Нужно включить VLAN для нового сегмента.",
+    "comment": "",
+    "cancel_reason": "",
+    "is_active": true,
+    "created_at": "2026-02-03T09:00:00.000Z",
+    "updated_at": "2026-02-03T09:00:00.000Z"
+  },
+  {
+    "id": 4002,
+    "author_id": 1,
+    "laborant_id": 3,
+    "type": "software",
+    "status": "done",
+    "name": "Обновить ПО на ПК-101-02",
+    "description": "Установить обновления системы и браузера.",
+    "comment": "",
+    "cancel_reason": "",
+    "is_active": true,
+    "created_at": "2026-02-05T09:00:00.000Z",
+    "updated_at": "2026-02-06T09:00:00.000Z"
+  }
+]

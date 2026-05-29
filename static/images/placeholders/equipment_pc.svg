@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="256" viewBox="0 0 512 256">
+  <rect width="512" height="256" rx="28" fill="#e0f2fe"/>
+  <rect x="70" y="64" width="300" height="132" rx="20" fill="#075985"/>
+  <rect x="98" y="92" width="244" height="76" rx="12" fill="#7dd3fc"/>
+  <rect x="388" y="86" width="54" height="120" rx="12" fill="#0c4a6e"/>
+  <circle cx="415" cy="112" r="6" fill="#7dd3fc"/>
+  <circle cx="415" cy="134" r="6" fill="#7dd3fc"/>
+  <text x="256" y="234" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="18" fill="#075985">EQUIPMENT PC</text>
+</svg>
+

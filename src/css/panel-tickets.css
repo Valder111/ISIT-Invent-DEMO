@@ -1,0 +1,31 @@
+/* Панель: раздел «Заявки» */
+
+.panel-tickets__field--tight {
+  margin: 0;
+}
+
+.panel-tickets__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.panel-tickets__btn-danger {
+  color: var(--color-danger, #b91c1c);
+}
+
+.panel-tickets__subtitle {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.panel-tickets__subtitle--section {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.panel-tickets__hint {
+  margin-top: 12px;
+}

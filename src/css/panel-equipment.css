@@ -1,0 +1,32 @@
+/* Панель: раздел «Оборудование» (вкладки категории / модели / локации / экземпляры) */
+
+.panel-equip__alert {
+  margin-bottom: 12px;
+}
+
+.panel-equip__header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-equip__filters {
+  margin-bottom: 12px;
+}
+
+.panel-equip__field--tight {
+  margin: 0;
+}
+
+.panel-equip__muted-tight {
+  margin: 4px 0 0;
+}
+
+.panel-equip__intro {
+  margin-bottom: 12px;
+}
+
+.panel-equip__form-note {
+  grid-column: 1 / -1;
+  margin: 0;
+}

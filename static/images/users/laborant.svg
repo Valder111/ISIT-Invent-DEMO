@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="32" fill="#7c3aed"/>
+  <path d="M84 60h88v56H84z" fill="#ede9fe"/>
+  <path d="M76 120h104v28c0 36-24 60-52 60s-52-24-52-60v-28z" fill="#c4b5fd"/>
+  <circle cx="128" cy="96" r="18" fill="#7c3aed"/>
+  <text x="128" y="238" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="18" fill="#f5f3ff">LABORANT</text>
+</svg>
+

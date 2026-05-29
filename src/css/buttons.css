@@ -1,0 +1,57 @@
+/* Кнопки */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 1px solid var(--corp-black);
+  border-radius: var(--radius);
+  background: var(--corp-black);
+  color: var(--corp-white);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.btn:hover {
+  background: var(--corp-text);
+  border-color: var(--corp-text);
+  text-decoration: none;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  filter: none;
+}
+
+.btn--secondary {
+  background: var(--corp-white);
+  color: var(--corp-text);
+  border: 1px solid var(--corp-border-strong);
+}
+
+.btn--secondary:hover {
+  background: var(--corp-surface);
+  border-color: rgba(10, 10, 10, 0.22);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--corp-text);
+  border: 1px solid var(--corp-border-strong);
+}
+
+.btn--ghost:hover {
+  background: var(--corp-surface);
+  border-color: rgba(10, 10, 10, 0.2);
+}
+
+.btn--sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}

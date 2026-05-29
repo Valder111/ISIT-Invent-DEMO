@@ -1,0 +1,47 @@
+[
+  {
+    "id": 10,
+    "name": "Компьютеры и рабочие станции",
+    "description": "Системные блоки, моноблоки и рабочие станции.",
+    "img": "types/workstation",
+    "img_url": "/static/images/placeholders/type_workstation.svg",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-05T09:00:00.000Z",
+    "updated_at": "2026-01-05T09:00:00.000Z"
+  },
+  {
+    "id": 11,
+    "name": "Сетевое оборудование",
+    "description": "Коммутаторы, точки доступа, маршрутизаторы.",
+    "img": "types/network",
+    "img_url": "/static/images/placeholders/type_network.svg",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-05T09:00:00.000Z",
+    "updated_at": "2026-01-05T09:00:00.000Z"
+  },
+  {
+    "id": 12,
+    "name": "Периферия",
+    "description": "Мыши, клавиатуры, мониторы, гарнитуры.",
+    "img": "types/peripheral",
+    "img_url": "/static/images/placeholders/type_peripheral.svg",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-05T09:00:00.000Z",
+    "updated_at": "2026-01-05T09:00:00.000Z"
+  },
+  {
+    "id": 13,
+    "name": "Расходники",
+    "description": "Кабели, адаптеры и мелкие расходные материалы.",
+    "img": "types/consumables",
+    "img_url": "/static/images/placeholders/type_consumables.svg",
+    "comment": "",
+    "is_active": true,
+    "created_at": "2026-01-05T09:00:00.000Z",
+    "updated_at": "2026-01-05T09:00:00.000Z"
+  }
+]
+

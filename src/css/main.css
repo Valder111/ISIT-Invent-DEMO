@@ -1,0 +1,84 @@
+/* Главная — акцент на приветствии и журнале */
+.main-page .welcome-h1 {
+  border-bottom: 2px solid var(--corp-border);
+  padding-bottom: 14px;
+}
+
+.main-infopanel .panel__header.main-infopanel__header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-infopanel__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-stats-grid {
+  display: grid;
+  gap: 14px;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.main-stats-grid--count-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.main-stats-grid--count-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 760px) {
+  .main-stats-grid--count-3,
+  .main-stats-grid--count-4 {
+    grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  }
+}
+
+.main-site-links {
+  margin: 28px 0 20px;
+}
+
+.main-activity-panel {
+  margin-top: 28px;
+}
+
+.main-activity-panel .panel__body {
+  padding-top: 8px;
+}
+
+.main-activity-panel__table {
+  width: 100%;
+}
+
+.main-page .main-activity-panel .table-scroll .data-table {
+  min-width: 720px;
+  width: 100%;
+}
+
+.main-page .data-table {
+  font-size: 13px;
+}
+
+.main-page .data-table th,
+.main-page .data-table td {
+  padding: 8px 10px;
+}
+
+@media (max-width: 767px) {
+  .main-activity-panel .table-scroll .data-table {
+    min-width: 520px;
+  }
+
+  .main-activity-panel .table-scroll .data-table th:first-child,
+  .main-activity-panel .table-scroll .data-table td:first-child {
+    position: static;
+    left: auto;
+    z-index: auto;
+    box-shadow: none;
+  }
+}

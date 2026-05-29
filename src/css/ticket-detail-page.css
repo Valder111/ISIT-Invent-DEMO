@@ -1,0 +1,39 @@
+/* Страница деталей заявки (TicketDetailPage) */
+
+.ticket-detail {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.ticket-detail .alert--page {
+  clear: both;
+}
+
+@media (max-width: 767px) {
+  .ticket-detail .attr-table:not(.attr-table-scroll .attr-table) {
+    font-size: 15px;
+  }
+
+  .ticket-detail .attr-table--fit th,
+  .ticket-detail .attr-table--fit td {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.ticket-detail__laborant-actions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ticket-detail__draft-actions {
+  margin-bottom: 16px;
+}
+
+.ticket-detail__muted-hint {
+  margin-bottom: 12px;
+}
+
+.ticket-detail__picker-actions {
+  margin-top: 12px;
+}

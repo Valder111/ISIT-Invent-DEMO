@@ -1,0 +1,92 @@
+[
+  {
+    "id": 8000,
+    "user_id": 4,
+    "entity_type": "ticket",
+    "entity_id": 4000,
+    "activity": "create",
+    "type": "ticket",
+    "comment": "Создана заявка",
+    "created_at": "2026-02-01T09:00:00.000Z"
+  },
+  {
+    "id": 8001,
+    "user_id": 3,
+    "entity_type": "ticket",
+    "entity_id": 4000,
+    "activity": "accept",
+    "type": "ticket",
+    "comment": "Заявка взята в работу",
+    "created_at": "2026-02-01T10:00:00.000Z"
+  },
+  {
+    "id": 8002,
+    "user_id": 1,
+    "entity_type": "equipment_instance",
+    "entity_id": 3000,
+    "activity": "create",
+    "type": "equipment",
+    "comment": "Добавлен экземпляр оборудования",
+    "created_at": "2026-01-28T11:00:00.000Z"
+  },
+  {
+    "id": 8003,
+    "user_id": 1,
+    "entity_type": "model",
+    "entity_id": 2000,
+    "activity": "update",
+    "type": "models",
+    "comment": "Обновлена модель",
+    "created_at": "2026-01-27T12:00:00.000Z"
+  },
+  {
+    "id": 8004,
+    "user_id": 1,
+    "entity_type": "type",
+    "entity_id": 1000,
+    "activity": "create",
+    "type": "types",
+    "comment": "Создана категория",
+    "created_at": "2026-01-26T13:00:00.000Z"
+  },
+  {
+    "id": 8005,
+    "user_id": 2,
+    "entity_type": "location",
+    "entity_id": 5000,
+    "activity": "update",
+    "type": "locations",
+    "comment": "Изменена локация",
+    "created_at": "2026-01-25T14:00:00.000Z"
+  },
+  {
+    "id": 8006,
+    "user_id": 1,
+    "entity_type": "platform",
+    "entity_id": null,
+    "activity": "upload",
+    "type": "documents",
+    "comment": "Загружен документ платформы",
+    "created_at": "2026-01-24T15:00:00.000Z"
+  },
+  {
+    "id": 8007,
+    "user_id": 2,
+    "entity_type": "writeoff",
+    "entity_id": 7000,
+    "activity": "writeoff_create",
+    "type": "writeoffs",
+    "comment": "Оформлено списание",
+    "created_at": "2026-01-23T16:00:00.000Z"
+  },
+  {
+    "id": 8008,
+    "user_id": 3,
+    "entity_type": "ticket_item",
+    "entity_id": 4100,
+    "activity": "create",
+    "type": "ticket_item",
+    "comment": "Добавлена позиция в заявку",
+    "created_at": "2026-01-22T17:00:00.000Z"
+  }
+]
